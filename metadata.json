@@ -1,0 +1,9 @@
+{
+  "name": "MeowMayo",
+  "author": "meow",
+  "creator": "MEOW",
+  "description": "meow...",
+  "entry": "index.js",
+  "version": "0.0.1",
+  "requires": ["Vigilance"]
+}
