@@ -15,6 +15,22 @@ import {
 class Settings {
 // General
     @SwitchProperty({
+        name: "Storage Command",
+        description: "Allows the usage of a command to open storage",
+        category: "General",
+        subcategory: "Storage"
+    })
+    storageOpener = false;
+
+    @TextProperty({
+        name: "Allowed Backpacks",
+        description: "Backpacks to be opened with command | Separate in order with a comma separated list i.e. \"13,9,18\" - opens in order 13, 9, 18",
+        category: "General",
+        subcategory: "Storage"
+    })
+    allowedBPS = "";
+
+    @SwitchProperty({
         name: "Invincibility Announcements",
         description: "Announces when invulnerability items are used",
         category: "General",
@@ -255,7 +271,7 @@ class Settings {
 
     @SwitchProperty({
         name: "Rend Damage",
-        description: "Shows How much rend damage is done | Requires track runs to be enabled | Stolen from chearys",
+        description: "Shows How much rend damage is done | Requires track runs to be enabled",
         category: "Kuudra",
         subcategory: "Rend"
     })
@@ -280,7 +296,7 @@ class Settings {
     // Party Comms
     @SwitchProperty({
         name: "Party Commands",
-        description: "its in the fucking name retard",
+        description: "Party Chat Commands",
         category: "Party Commands",
         subcategory: "! General !"
     })
