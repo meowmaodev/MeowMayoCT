@@ -5,7 +5,9 @@ import "./feat/kuudra/SupplyUtils";
 import "./feat/kuudra/RendDamage";
 import "./feat/kuudra/KuudraTimings"
 import "./feat/kuudra/KuudraTracker";
+import "./feat/general/GetPearls";
 import "./feat/general/InvincibilityAnnouncements";
+import "./feat/general/StorageOpener";
 import {fetchGlobalStats} from "./feat/kuudra/KuudraTimings";
 
 register("command", () => {
